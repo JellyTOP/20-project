@@ -1,0 +1,170 @@
+/*  这些属性只是最常用到的, 并不代表全部 
+ 布局定位属性 
+display / list-style / position（相应的 top,right,bottom,left） / float / clear  / visibility / overflow
+ 自身属性 
+width / height / margin / padding / border / background
+ 文本属性 
+color / font / text-decoration / text-align / vertical-align / white- space / break-word
+其他（CSS3）  
+content / cursor / border-radius / box-shadow / text-shadow / background:linear-gradient ...
+*/
+@charset 'UTF-8';
+.wrap
+{
+    background-color: #000;
+}
+.header
+{
+    height: 100px;
+
+    background-color: #000;
+}
+.h-main
+{
+    position: relative;
+
+    height: 100px;
+}
+.h-main h1
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+.h-main h1 a
+{
+    font-size: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/logo.png) 0 5px/cover no-repeat;
+}
+.h-nav
+{
+    margin-left: 220px;
+}
+.h-nav li
+{
+    line-height: 100px;
+
+    float: left;
+}
+.h-nav li a
+{
+    padding: 0 25px;
+
+    color: #c8c8c8;
+}
+.h-nav .active
+{
+    color: #fff;
+}
+.h-main .cart
+{
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    height: 20px;
+}
+.h-main .cart li
+{
+    float: left;
+}
+.cart .user
+{
+    font-size: 0;
+
+    display: block;
+
+    width: 36px;
+    height: 20px;
+    margin-left: 41px;
+
+    background: url(../images/account-icon.png) -57px 0 no-repeat;
+}
+.cart .line-v:before
+{
+    height: 13px;
+
+    background-color: #242424;
+}
+.cart .user:hover
+{
+    background-position-x: 3px;
+}
+.cart .cart-info
+{
+    display: block;
+
+    width: 60px;
+    height: 20px;
+    margin-left: 21px;
+}
+.cart .cart-info:before
+{
+    display: inline-block;
+
+    width: 30px;
+    height: 20px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../images/account-icon.png) -60px -21px no-repeat;
+}
+.cart .cart-info:hover:before
+{
+    background-position: 0 -21px;
+}
+.cart .cart-info i
+{
+    line-height: 20px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: #969696;
+}
+
+.banner
+{
+    position: relative;
+
+    margin: 50px auto;
+}
+.swiper-container
+{
+    width: 1220px;
+    height: 554px;
+}
+.swiper-pagination
+{
+    top: 506px;
+}
+.overwatch-logo
+{
+    position: absolute;
+    top: 150px;
+    left: 5%;
+
+    height: 300px;
+}
+.overwatch-loading
+{
+    position: absolute;
+    top: 150px;
+    left: 80%;
+
+    height: 300px;
+}
