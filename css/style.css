@@ -11,8 +11,9 @@ content / cursor / border-radius / box-shadow / text-shadow / background:linear-
 @charset 'UTF-8';
 .wrap
 {
-    background-color: #000;
+    background-color: #ededed;
 }
+/*头部*/
 .header
 {
     height: 100px;
@@ -62,6 +63,7 @@ content / cursor / border-radius / box-shadow / text-shadow / background:linear-
 {
     color: #fff;
 }
+/*购物车*/
 .h-main .cart
 {
     position: absolute;
@@ -121,27 +123,53 @@ content / cursor / border-radius / box-shadow / text-shadow / background:linear-
     background-position: 0 -21px;
 }
 .cart .cart-info i
-{
-    line-height: 20px;
-
+{   
     display: inline-block;
-
     width: 20px;
     height: 20px;
-
+    background-color: #969696;
+    color: #fff;
     text-align: center;
     vertical-align: middle;
-
-    color: #fff;
+    line-height: 20px;
     border-radius: 50%;
-    background-color: #969696;
+}
+.h-main .cart .cart-show{
+    position: relative;
+    padding-bottom: 16px;
+}
+.cart-show .cart-list{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 360px;
+    height: 134px;
+    padding-top: 180px;
+    background:#fff url(../images/cart.png) 50% 40% no-repeat;
+    text-align: center;
+    border-radius: 10px;
+}
+.cart .cart-show:hover .cart-list{
+    display: block;
+}
+.cart-show .cart-list h3{
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.cart-show .cart-list p{
+    color: #bcbcbc;
+    font-size: 12px;
 }
 
+
+/*轮播图*/
 .banner
 {
     position: relative;
 
-    margin: 50px auto;
+    margin: 400px auto;
 }
 .swiper-container
 {
